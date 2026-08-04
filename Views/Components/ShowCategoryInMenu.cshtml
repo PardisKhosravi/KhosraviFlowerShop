@@ -1,0 +1,11 @@
+﻿@model IEnumerable<KhosraviFlowerShop.Models.Category>
+
+<span>خدمات ما </span>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li><a href=""> @item.Name </a></li>
+
+    }
+
+</ul>

@@ -1,0 +1,144 @@
+﻿@using KhosraviFlowerShop.Classes
+<!DOCTYPE html>
+<html class="no-js" dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <title> گل فردوس </title>
+    <base href="">
+    <meta name="googlebot" content="index,follow">
+    <meta name="robots" content="noodp,noydir">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous">*@
+
+
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="~/css/style.css">
+    <link href="~/css/MyStyle.css" rel="stylesheet" />
+    <script src="~/js/jquery.min.js"></script>
+
+    <link href="~/css/jalalidatepicker.css" rel="stylesheet" />
+    <script src="~/js/jalalidatepicker.js"></script>
+
+</head>
+<body>
+    <script src="~/js/modernizr.js"></script>
+
+    <!-- Top Menu -->
+    <div class="top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-5">
+                    <ul>
+                        <li><a href=""><i class="fa fa-home"></i></a></li>
+                        <li><a href=""><i class="fa fa-question-circle"></i></a></li>
+                        <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-7">
+                    <span>امروز: @DateTime.Now.ToShamsi()</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Menu -->
+    <!-- header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <a href="" class="logo"><img src="~/img/logo.png" alt="" title=""></a>
+                    <div class="left-side">
+                        <h1><a href="">گل فردوس</a></h1>
+                        <h2> ارائه دهنده انواع خدمات گل</h2>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <form action="" method="get" class="border-radius">
+                        <input class="border-radius" type="text" placeholder=" جستجو کنید ... ">
+                        <button><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- menu -->
+    <nav class="main-menu">
+        <div class="container">
+            <span><i class="fa fa-th-list"></i></span>
+            <ul>
+                <li><a href="/"> صفحه اصلی </a></li>
+                <li><a href="/admin/categories"> انواع محصولات </a></li>
+                <li><a href="/Admin/products"> محصولات </a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- End menu -->
+
+    <div class="container margin-top-30">
+        <div class="row">
+
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <section class="access-links">
+                        <header> دسترسی سریع </header>
+                        <ul>
+                            <li><a href=""> صفحه اصلی </a></li>
+                            <li><a href=""> قوانین سایت  </a></li>
+                            <li><a href=""> راهنمای سایت  </a></li>
+                            <li><a href=""> پیوندهای سایت </a></li>
+                            <li><a href=""> صفحه اصلی </a></li>
+                            <li><a href=""> قوانین سایت  </a></li>
+                            <li><a href=""> صفحه اصلی </a></li>
+                            <li><a href=""> قوانین سایت  </a></li>
+                            <li><a href=""> راهنمای سایت  </a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+                    <div class="socials">
+                        <span> شبکه های اجتماعی  سایت</span>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-paper-plane"></i></a>
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <p>
+                        تمامی حقوق مادی و معنوی این طرح متعلق به آموزشگاه برنامه نویسان می باشد و کپی برداری از این طرح غیر اخلاقی می باشد.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous">*@
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+ 
+
+
+
+
+
+    @*@RenderSection("Scripts", required: false)*@
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

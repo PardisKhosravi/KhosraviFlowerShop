@@ -1,0 +1,19 @@
+﻿@using KhosraviFlowerShop.Classes
+@model IEnumerable<KhosraviFlowerShop.Models.Product>
+<section class="last-news-side border-radius">
+    <header><i class="icons icon-star"></i> <h3> پربازدیدترین محصولات ما </h3></header>
+    <ul>
+        @foreach (var item in Model)
+        {
+        <li>
+            <img class="border-radius" src="~/img/Products/@item.Image">
+            <h2> <a href="">@item.Title</a></h2>
+            <span>انتشار : @item.CreateDate</span>
+            <p> <a href="">قیمت: @item.Price</a></p>
+        </li>
+        }
+
+
+
+    </ul>
+</section>
